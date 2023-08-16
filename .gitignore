@@ -2,6 +2,7 @@
 /packages
 .log
 .tmp
+.txt
 .lock
 /bin
 /out
