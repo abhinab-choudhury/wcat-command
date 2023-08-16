@@ -2,6 +2,12 @@
 
 It is used to display or make a copy content of one or more files in the terminal
 
+## Instructions to Configure
+1. Open command prompt and choose your desired directory to clone the repository
+2. ` git clone https://github.com/abhinab-choudhury/wcat-command.git `
+3. ` cd wcat-command`
+4. ` npm link`
+
 ## Commands
 
 1. *wcat filepath* => displays content of the file in the terminal ✔
