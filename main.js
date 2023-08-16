@@ -13,7 +13,7 @@ for(let i = 0;i < COMMAND.length; i++) {
         if(AVILABLE_FUNC.includes(COMMAND[i])) {
             FUNC.push(COMMAND[i])
         } else {
-            console.log(`${COMMAND[i].slice(1)} IS NOT AVILABLE`)
+            console.log(`-${COMMAND[i].slice(1)} IS NOT AVILABLE`)
             return
         }
     } else {
