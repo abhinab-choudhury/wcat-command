@@ -1,0 +1,12 @@
+/node_modules
+/packages
+.log
+.tmp
+.lock
+/bin
+/out
+/target
+.o
+.pyc
+.class
+.idea/workspace.xml
