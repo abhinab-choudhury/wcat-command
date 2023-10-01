@@ -1,3 +1,8 @@
+<div style="display:flex;"> 
+  <img style="margin-left:20px;" width="100" height="100" src="https://img.icons8.com/fluency/48/node-js.png" alt="nodejs"/>
+  <img style="margin-left:20px;"  width="100" height="100" src="https://img.icons8.com/fluency/100/linux-terminal.png" alt="linux-terminal"/>
+</div>
+
 # Wcat
 
 It is used to display or make a copy content of one or more files in the terminal
