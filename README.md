@@ -7,7 +7,7 @@
 
 **wcat-command** is a powerful CLI tool for displaying and manipulating file content directly in the terminal. It allows you to view and process files with various options for formatting and redirection.
 
-![wcat-command](./wcat-command.png)
+![wcat-command](https://github.com/user-attachments/assets/21fa5605-80ba-4b91-a565-25ebf234e0cf)
 
 ## Features
 
