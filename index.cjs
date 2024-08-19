@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
+const cfonts = require("cfonts");
 const path = require("path");
 
 // Constants
 const AVAILABLE_FUNC = ["-n", "-b", "-s"];
-const VERSION = "1.0.0";
+const VERSION = "2.1.0";
 
 // Retrieve command-line arguments
 const args = process.argv.slice(2);
@@ -16,7 +17,21 @@ const functions = [];
 
 // Display version information
 if (args.includes("--version")) {
-  console.log(`wcat-command version ${VERSION}`);
+  cfonts.say(`wcat-command|version ${VERSION}`, {
+    font: "",
+    align: "center",
+    colors: ["system"],
+    background: "transparent",
+    letterSpacing: 1,
+    lineHeight: 1,
+    space: true,
+    maxLength: "0",
+    gradient: false,
+    independentGradient: false,
+    transitionGradient: false,
+    rawMode: false,
+    env: "node",
+  });
   process.exit(0);
 }
 
@@ -82,4 +97,3 @@ function applyFunction(text, func) {
       return text;
   }
 }
-
