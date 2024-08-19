@@ -6,7 +6,7 @@ const path = require("path");
 
 // Constants
 const AVAILABLE_FUNC = ["-n", "-b", "-s"];
-const VERSION = "2.1.0";
+const VERSION = "2.1.1";
 
 // Retrieve command-line arguments
 const args = process.argv.slice(2);
@@ -16,7 +16,9 @@ const inputFiles = [];
 const functions = [];
 
 // Display version information
-if (args.includes("--version")) {
+if (
+  args.includes("--version") || args.includes("--ver") || args.includes("-v")
+) {
   cfonts.say(`wcat-command|version ${VERSION}`, {
     font: "",
     align: "center",
@@ -32,6 +34,35 @@ if (args.includes("--version")) {
     rawMode: false,
     env: "node",
   });
+  process.exit(0);
+}
+
+//help command
+if (args.includes("--help") || args.includes("-h")) {
+  console.log(`
+    Usage: wcat [options] <file ...>
+
+    wcat is a command-line tool to display, concatenate, and manipulate file contents. It supports various options for transforming file output in the terminal.
+
+    Options:
+      -n                         Number all output lines.
+      -b                         Number non-empty output lines only.
+      -s                         Squeeze multiple adjacent empty lines into a single blank line.
+      --version, --ver, -v       Show the version of wcat.
+      --help, -h                 Show this help menu.
+
+    Examples:
+      wcat file.txt              Display the contents of file.txt.
+      wcat file1.txt file2.txt   Concatenate and display contents of file1.txt and file2.txt.
+      wcat -n file.txt           Number all lines of file.txt.
+      wcat -b file.txt           Number non-empty lines of file.txt.
+      wcat -s file.txt           Remove consecutive blank lines from file.txt.
+      wcat -s -n file.txt        Remove consecutive blank lines and number all lines.
+
+    Additional Features:
+      >  wcat file.txt > output.txt    Redirect the output to a new file (overwrites if exists).
+      >> wcat file.txt >> output.txt   Append the output to an existing file.
+  `);
   process.exit(0);
 }
 
