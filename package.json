@@ -1,21 +1,27 @@
 {
   "name": "wcat-command",
   "version": "1.0.0",
-  "description": "It is used to display or make a copy content of one or more files in the terminal",
-  "main": "main.js",
+  "description": "A CLI tool for text processing",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": {
+    "wcat": "./index.cjs"
+  },
   "dependencies": {
     "ansi-regex": "^4.1.1",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
     "prompt-sync": "^4.2.0",
-    "strip-ansi": "^5.2.0"
+    "strip-ansi": "^5.2.0",
+    "yargs": "^17.7.2"
   },
-  "devDependencies": {},
   "scripts": {
+    "start": "node ./index.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "fs-module"
+  ],
   "author": "",
-  "license": "ISC",
-  "bin": {
-    "wcat": "main.js"
-  }
+  "license": "MIT"
 }
