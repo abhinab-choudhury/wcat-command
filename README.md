@@ -15,40 +15,6 @@
 - Format output with line numbers or compact line breaks.
 - Redirect output to files with options to overwrite or append.
 
-## Installation
-
-### Clone the Repository
-
-Open your terminal and clone the repository:
-
-```bash
-git clone https://github.com/abhinab-choudhury/wcat-command.git
-```
-
-### Navigate to Directory
-
-Change into the project directory:
-
-```bash
-cd wcat-command
-```
-
-### Make Script Executable
-
-Ensure the script is executable:
-
-```bash
-chmod +x index.cjs
-```
-
-### Link Globally
-
-Install the CLI tool globally for testing:
-
-```bash
-npm link
-```
-
 ## Usage
 
 ### Basic Commands
